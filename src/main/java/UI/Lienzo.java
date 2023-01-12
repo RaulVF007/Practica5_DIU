@@ -45,6 +45,7 @@ public class Lienzo extends JPanel
     public void setFilters(boolean redButton, boolean greenButton, boolean blueButton) {
         try {
             imagen = ImageIO.read(new File("src\\imagenes\\imagen.jpg"));
+            logo = ImageIO.read(new File("src\\imagenes\\logo.png"));
         } catch (IOException ex) {
             Logger.getLogger(Lienzo.class.getName()).log(Level.SEVERE, null, ex);
         }
