@@ -27,8 +27,8 @@ public class Lienzo extends JPanel
 
     public Lienzo() {
         try {
-            imagen = ImageIO.read(new File("..\\src\\imagenes\\imagen.jpg"));
-            logo = ImageIO.read(new File("..\\src\\imagenes\\logo.png"));
+            imagen = ImageIO.read(new File("src\\imagenes\\imagen.jpg"));
+            logo = ImageIO.read(new File("src\\imagenes\\logo.png"));
             this.setPreferredSize(new Dimension(imagen.getWidth(), imagen.getHeight()));
         } catch (IOException ex) {
             Logger.getLogger(Lienzo.class.getName()).log(Level.SEVERE, null, ex);
